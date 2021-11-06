@@ -1,4 +1,4 @@
-import { Reposiories } from "./constants";
+import { Repositories } from "./constants";
 
 /* Initial State Interface */
 export interface IInitialSearchRepo {
@@ -9,16 +9,16 @@ export interface IInitialSearchRepo {
 
 /* Action Interfaces */
 export interface IGetRepositories {
-	type: Reposiories.GET_REPOSITORES;
+	type: Repositories.GET_REPOSITORES;
 }
 
 export interface IGetRepositoriesSuccess {
-	type: Reposiories.GET_REPOSITORES_SUCCESS;
+	type: Repositories.GET_REPOSITORES_SUCCESS;
 	payload: string[];
 }
 
 export interface IGetRepositoriesFailure {
-	type: Reposiories.GET_REPOSITORES_FAILURE;
+	type: Repositories.GET_REPOSITORES_FAILURE;
 	payload: string;
 }
 

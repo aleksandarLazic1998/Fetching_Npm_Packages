@@ -1,6 +1,6 @@
 import produce from "immer";
-import { IInitialSearchRepo, TRepostioriesAction } from "./Interfaces";
-import { Reposiories } from "./Interfaces/constants";
+import { IInitialSearchRepo, TRepostioriesAction } from "./TypeScript";
+import { Repositories } from "./TypeScript/constants";
 
 const initialState: IInitialSearchRepo = {
 	loading: false,
@@ -9,24 +9,24 @@ const initialState: IInitialSearchRepo = {
 };
 
 const repositoriesReducer = (
-	state: IInitialSearchRepo = initialState,
+	state = initialState,
 	action: TRepostioriesAction
 ) => {
 	produce(state, (draft) => {
 		switch (action.type) {
-			case Reposiories.GET_REPOSITORES:
+			case Repositories.GET_REPOSITORES:
 				draft.loading = true;
-				break;
+				return draft;
 
-			case Reposiories.GET_REPOSITORES_SUCCESS:
+			case Repositories.GET_REPOSITORES_SUCCESS:
 				draft.loading = false;
 				draft.data = action.payload;
-				break;
+				return draft;
 
-			case Reposiories.GET_REPOSITORES_FAILURE:
+			case Repositories.GET_REPOSITORES_FAILURE:
 				draft.loading = false;
 				draft.error = action.payload;
-				break;
+				return draft;
 		}
 	});
 };
