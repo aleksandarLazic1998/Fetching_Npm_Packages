@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { SearchField } from "./components/SearchField";
 import { useGlobalSelector } from "./redux/Hooks";
-import searchNpmsActionCreator from "./redux/RepositoriesReducer/ActionCreator";
+import searchNpmsActionCreator from "./redux/RepositoriesReducer/Actions";
 
 function App() {
 	const dispatch = useDispatch();
