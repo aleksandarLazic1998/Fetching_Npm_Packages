@@ -8,7 +8,6 @@ const initialState: IInitialSearchRepo = {
 	error: "",
 };
 
-/* eslint-disable default-case */
 const repositoriesReducer = (
 	state = initialState,
 	action: TRepostioriesAction

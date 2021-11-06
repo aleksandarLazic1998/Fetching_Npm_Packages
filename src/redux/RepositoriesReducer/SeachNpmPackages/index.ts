@@ -10,9 +10,10 @@ export const searchNpmsActionCreator = (term: string) => {
 		});
 
 		try {
-			const response = await axios.get(
-				`https://registry.npmjs.org/-/v1/search?text=${term}`
-			);
+			const response = await axios({
+				url: `https://registry.npmjs.org/-/v1/search?text=${term}`,
+				method: "GET",
+			});
 			const { objects } = response.data;
 
 			const names = objects.map(

@@ -6,4 +6,4 @@ interface IListOfPackagesProps {
 
 export const ListOfPackages: React.FC<IListOfPackagesProps> = ({
 	repos: name,
-}) => <li>{name.charAt(0).toUpperCase() + name.slice(1)}</li>;
+}) => <li key={name}>{name.charAt(0).toUpperCase() + name.slice(1)}</li>;

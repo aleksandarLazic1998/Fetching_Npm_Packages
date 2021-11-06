@@ -3,7 +3,7 @@ import { useDispatch } from "react-redux";
 import { DisplayField } from "./components/DisplayField";
 import { SearchField } from "./components/SearchField";
 import { useGlobalSelector } from "./redux/Hooks";
-import searchNpmsActionCreator from "./redux/RepositoriesReducer/Actions";
+import searchNpmsActionCreator from "./redux/RepositoriesReducer/SeachNpmPackages";
 
 function App() {
 	const dispatch = useDispatch();
