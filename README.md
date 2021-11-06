@@ -7,16 +7,16 @@
 - axios: https://www.npmjs.com/package/axios,
 - redux: https://www.npmjs.com/package/redux,
 - redux-thunk: https://www.npmjs.com/package/redux-thunk,
-- react-redux: https://www.npmjs.com/package/react-redux
+- react-redux: https://www.npmjs.com/package/react-redux,
+- immer: https://www.npmjs.com/package/immer
 
 ## Usage:
 
 -This App will fetch npm packages that are entered in input element and display list of them on screen.
 
 ## Technologies:
+
 - TypeScript
 - React
 - Redux
 - Redux-Thunk
-
-
