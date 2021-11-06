@@ -1,9 +1,16 @@
 import React from "react";
+import { useDispatch } from "react-redux";
 import { SearchField } from "./components/SearchField";
+import { useGlobalSelector } from "./redux/Hooks";
+import searchNpmsActionCreator from "./redux/RepositoriesReducer/Actions";
 
 function App() {
+	const dispatch = useDispatch();
+	const repositoriesState = useGlobalSelector((state) => state.repositories);
+	console.log(repositoriesState);
+
 	const handleSubmitForm = (term: string) => {
-		console.log(term);
+		dispatch(searchNpmsActionCreator(term));
 	};
 
 	return (
