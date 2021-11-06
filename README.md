@@ -13,4 +13,10 @@
 
 -This App will fetch npm packages that are entered in input element and display list of them on screen.
 
+## Technologies:
+- TypeScript
+- React
+- Redux
+- Redux-Thunk
+
 
