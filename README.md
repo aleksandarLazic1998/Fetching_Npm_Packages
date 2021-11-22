@@ -12,7 +12,7 @@
 
 ## Usage:
 
--This App will fetch npm packages that are entered in input element and display list of them on screen.
+-This App will fetch npm packages that are entered in input element and display list of matching items the on screen.
 
 ## Technologies:
 
